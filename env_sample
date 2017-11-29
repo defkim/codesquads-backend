@@ -1,0 +1,21 @@
+SECRET_KEY = 'xfq5(-fvlh548j$ggfe(gv0ly-dhz_nd^-46qdsp@cz^en0)ax'
+
+# Database
+DB_ENINE = 'django.db.backends.postgresql_psycopg2'
+DB_NAME = cp
+DB_USER=None
+DB_PASS=None
+DB_HOST=5432
+DB_PORT=5432
+
+
+# Email
+EMAIL_HOST = "smtp.qq.com"
+EMAIL_HOST_USER = "youremail@qq.com"
+EMAIL_HOST_PASSWORD = "your email code"
+DEFAULT_FROM_EMAIL = "youremail@qq.com"
+EMAIL_PORT = "587"
+EMAIL_USE_TLS = "True"
+
+
+TIME_ZONE = 'Asia/Shanghai'
