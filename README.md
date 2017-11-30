@@ -3,11 +3,12 @@
 
 # Installation
 ## No Docker
+**Under Ubuntu**
 - Database
 ```sql
 postgres=# CREATE USER ubuntu;
 CREATE ROLE
-postgres=# CREATE DATABASE cp OWNER ubuntu;
+postgres=# CREATE DATABASE cs OWNER ubuntu;
 CREATE DATABASE
 postgres=# GRANT ALL PRIVILEGES ON DATABASE cp to ubuntu;
 GRANT

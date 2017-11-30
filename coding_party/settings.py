@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost']
 
 
 # Application definition
@@ -42,6 +42,11 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
+
+    # my apps
+    'codeauth',
+    'projects',
+
 ]
 
 MIDDLEWARE = [
@@ -128,6 +133,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Custom auth setting
+AUTH_USER_MODEL = 'codeauth.User'
 
 # Djoser settings
 DJOSER = {
