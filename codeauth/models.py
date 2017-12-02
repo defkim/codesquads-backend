@@ -10,7 +10,8 @@ class CustomeUserManager(BaseUserManager):
 		email = self.normalize_email(email)
 		user = self.model(email=email, 
 			phone=phone,
-			is_active=False,
+			# is_active=False,
+			is_active=True,
 			is_staff=is_staff)
 		user.set_password(password)
 		user.save(using=self._db)

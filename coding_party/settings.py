@@ -136,11 +136,17 @@ STATIC_URL = '/static/'
 # Custom auth setting
 AUTH_USER_MODEL = 'codeauth.User'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
 # Djoser settings
 DJOSER = {
     # frontend url > activation api
     'ACTIVATION_URL': 'verification/{uid}/{token}',
-    'SEND_ACTIVATION_EMAIL': True,
+    'SEND_ACTIVATION_EMAIL': False,
+    # 'SEND_ACTIVATION_EMAIL': True,
     'SITE_NAME': 'Account_Manager',
 }
 # Send email

@@ -10,7 +10,7 @@ postgres=# CREATE USER ubuntu;
 CREATE ROLE
 postgres=# CREATE DATABASE cs OWNER ubuntu;
 CREATE DATABASE
-postgres=# GRANT ALL PRIVILEGES ON DATABASE cp to ubuntu;
+postgres=# GRANT ALL PRIVILEGES ON DATABASE cs to ubuntu;
 GRANT
 postgres=# \q
 ```
